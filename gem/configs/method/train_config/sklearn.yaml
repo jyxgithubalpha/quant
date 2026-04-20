@@ -1,0 +1,7 @@
+_target_: gem2.method.TrainConfig
+params: {}
+num_boost_round: 1
+early_stopping_rounds: 1
+feval_names: ["pearsonr_ic"]
+objective_name: "regression"
+verbose_eval: 0

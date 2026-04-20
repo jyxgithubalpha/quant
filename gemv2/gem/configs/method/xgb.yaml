@@ -1,0 +1,18 @@
+defaults:
+  - model: xgb
+  - train_config: gbdt
+  - trainer: xgb
+  - evaluator: regression
+  - importance_extractor: xgb
+  - tuner: xgb
+  - adapter: xgb
+  - transform_pipeline: defaults
+  - _self_
+
+name: xgb
+
+train_config:
+  max_iterations: 200
+  early_stopping_patience: 50
+  monitor_metrics: ["rmse"]
+  log_interval: 1

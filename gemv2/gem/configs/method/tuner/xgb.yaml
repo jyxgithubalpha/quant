@@ -1,0 +1,5 @@
+_target_: gem.method.tuning.OptunaTuner
+target_metric: rmse
+direction: minimize
+search_space:
+  _target_: gem.method.gbdt.XGBoostSearchSpace

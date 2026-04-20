@@ -1,0 +1,43 @@
+_target_: gem2.experiment.ExperimentConfig
+name: ${method.name}
+output_dir: ${hydra:runtime.output_dir}
+state_policy:
+  _target_: gem2.experiment.StatePolicyConfig
+  mode: per_split
+n_trials: 0
+parallel_trials: 1
+use_ray_tune: null
+ray_address: null
+num_cpus: null
+num_gpus: null
+use_ray: null
+resource_request:
+  trial_gpus: 0
+  final_train_gpus: 0
+  trial_cpus: 4
+  final_train_cpus: 4
+visualization:
+  enabled: false
+  output_subdir: visualization
+  render:
+    show: false
+    interval_ms: 800
+    dpi: 150
+  importance:
+    enabled: true
+    export_data: true
+    heatmap: true
+    animation: true
+    distribution: true
+    sort_by: mean
+    normalize: zscore
+  metrics:
+    enabled: true
+    export_data: true
+    quarterly_summary: true
+    cumulative_backtest: true
+    relative_improvement_curve: true
+    overview: true
+    distribution: true
+    per_metric: true
+    metric_names: null

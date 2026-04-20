@@ -1,0 +1,2 @@
+_target_: gem2.data.DTypePreprocessor
+dtype_map: {"date": "int32", "code": "str"}

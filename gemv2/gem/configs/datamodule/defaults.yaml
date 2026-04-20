@@ -1,0 +1,9 @@
+defaults:
+  - sourcespec_dict: defaults
+  - data_reader: FeatherReader
+  - single_source_pipeline_dict: defaults
+  - cross_source_pipeline: defaults
+  - dataset_assembler: FeatureAssembler
+  - _self_
+
+_target_: gem.data.DataModule

@@ -1,0 +1,10 @@
+defaults:
+  - model: torch_mlp
+  - train_config: torch
+  - trainer: torch
+  - evaluator: regression
+  - importance_extractor: torch
+  - transform_pipeline: defaults
+  - _self_
+
+name: mlp

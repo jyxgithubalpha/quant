@@ -1,0 +1,9 @@
+_target_: gem2.data.RollingWindowSplitGenerator
+test_date_start: 20230101
+test_date_end: 20241231
+train_len: 480
+val_len: 20
+test_len: 60
+gap: 10
+step: 60
+expanding: false

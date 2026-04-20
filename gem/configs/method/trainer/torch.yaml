@@ -1,0 +1,7 @@
+_target_: gem2.method.torch.TorchTabularTrainer
+use_gpu: true
+epochs: 50
+batch_size: 1024
+lr: 0.001
+weight_decay: 0.0
+patience: 10

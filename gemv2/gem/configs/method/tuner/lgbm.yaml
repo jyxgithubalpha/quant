@@ -1,0 +1,5 @@
+_target_: gem.method.tuning.OptunaTuner
+search_space:
+  _target_: gem.method.gbdt.LightGBMSearchSpace
+target_metric: pearsonr_ic
+direction: maximize

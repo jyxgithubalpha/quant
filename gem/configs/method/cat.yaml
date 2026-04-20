@@ -1,0 +1,19 @@
+defaults:
+  - model: cat
+  - train_config: gbdt
+  - trainer: cat
+  - evaluator: regression
+  - importance_extractor: cat
+  - tuner: cat
+  - adapter: cat
+  - transform_pipeline: defaults
+  - _self_
+
+name: cat
+
+train_config:
+  num_boost_round: 200
+  early_stopping_rounds: 50
+  feval_names: ["RMSE"]
+  objective_name: "regression"
+  verbose_eval: 1

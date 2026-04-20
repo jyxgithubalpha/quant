@@ -1,0 +1,14 @@
+_target_: gem.transforms.TransformPipeline
+transforms:
+  - _target_: gem.transforms.FillNaN
+    value: 0.0
+    method: constant
+  - _target_: gem.transforms.Winsorize
+    target: X
+    lower: 0.01
+    upper: 0.99
+    per_date: true
+  - _target_: gem.transforms.ZScoreStandardize
+    target: both
+    eps: 1e-8
+    per_date: true

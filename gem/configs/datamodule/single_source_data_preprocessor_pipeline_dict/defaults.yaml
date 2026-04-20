@@ -1,0 +1,68 @@
+defaults:
+  - SingleSourceDataPreprocessor@fac.steps.fillnan: FillNaNPreprocessor
+  - SingleSourceDataPreprocessor@fac.steps.dtype: DTypePreprocessor
+
+  - SingleSourceDataPreprocessor@ret.steps.dropnan: DropNaNPreprocessor
+  - SingleSourceDataPreprocessor@ret.steps.dtype: DTypePreprocessor
+
+  - SingleSourceDataPreprocessor@ret_raw.steps.dropnan: DropNaNPreprocessor
+  - SingleSourceDataPreprocessor@ret_raw.steps.dtype: DTypePreprocessor
+
+  - SingleSourceDataPreprocessor@liquidity.steps.fillnan: FillNaNPreprocessor
+  - SingleSourceDataPreprocessor@liquidity.steps.dtype: DTypePreprocessor
+
+  - SingleSourceDataPreprocessor@score.steps.fillnan: FillNaNPreprocessor
+  - SingleSourceDataPreprocessor@score.steps.dtype: DTypePreprocessor
+
+  - SingleSourceDataPreprocessor@benchmark.steps.fillnan: FillNaNPreprocessor
+  - SingleSourceDataPreprocessor@benchmark.steps.dtype: DTypePreprocessor
+  
+  - SingleSourceDataPreprocessor@bench1.steps.fillnan: FillNaNPreprocessor
+  - SingleSourceDataPreprocessor@bench1.steps.dtype: DTypePreprocessor
+  - SingleSourceDataPreprocessor@bench2.steps.fillnan: FillNaNPreprocessor
+  - SingleSourceDataPreprocessor@bench2.steps.dtype: DTypePreprocessor
+  - SingleSourceDataPreprocessor@bench3.steps.fillnan: FillNaNPreprocessor
+  - SingleSourceDataPreprocessor@bench3.steps.dtype: DTypePreprocessor
+  - SingleSourceDataPreprocessor@bench4.steps.fillnan: FillNaNPreprocessor
+  - SingleSourceDataPreprocessor@bench4.steps.dtype: DTypePreprocessor
+  - SingleSourceDataPreprocessor@bench5.steps.fillnan: FillNaNPreprocessor
+  - SingleSourceDataPreprocessor@bench5.steps.dtype: DTypePreprocessor
+  - SingleSourceDataPreprocessor@bench6.steps.fillnan: FillNaNPreprocessor
+  - SingleSourceDataPreprocessor@bench6.steps.dtype: DTypePreprocessor
+  - _self_
+
+fac:
+  _target_: gem2.data.SingleSourceDataPreprocessorPipeline
+
+ret:
+  _target_: gem2.data.SingleSourceDataPreprocessorPipeline
+
+ret_raw:
+  _target_: gem2.data.SingleSourceDataPreprocessorPipeline
+
+liquidity:
+  _target_: gem2.data.SingleSourceDataPreprocessorPipeline
+
+score:
+  _target_: gem2.data.SingleSourceDataPreprocessorPipeline
+
+benchmark:
+  _target_: gem2.data.SingleSourceDataPreprocessorPipeline
+
+bench1:
+  _target_: gem2.data.SingleSourceDataPreprocessorPipeline
+
+bench2:
+  _target_: gem2.data.SingleSourceDataPreprocessorPipeline
+
+bench3:
+  _target_: gem2.data.SingleSourceDataPreprocessorPipeline
+
+bench4:
+  _target_: gem2.data.SingleSourceDataPreprocessorPipeline
+
+bench5:
+  _target_: gem2.data.SingleSourceDataPreprocessorPipeline
+
+bench6:
+  _target_: gem2.data.SingleSourceDataPreprocessorPipeline

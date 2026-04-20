@@ -1,0 +1,18 @@
+defaults:
+  - model: cat
+  - train_config: gbdt
+  - trainer: cat
+  - evaluator: regression
+  - importance_extractor: cat
+  - tuner: cat
+  - adapter: cat
+  - transform_pipeline: defaults
+  - _self_
+
+name: cat
+
+train_config:
+  max_iterations: 200
+  early_stopping_patience: 50
+  monitor_metrics: ["RMSE"]
+  log_interval: 1

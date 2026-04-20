@@ -1,0 +1,5 @@
+_target_: gem2.method.UnifiedTuner
+target_metric: rmse
+direction: minimize
+search_space:
+  _target_: gem2.method.gbdt.XGBoostSpace

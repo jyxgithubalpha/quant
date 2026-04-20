@@ -1,0 +1,6 @@
+_target_: gem.core.training.TrainConfig
+params: {}
+max_iterations: 200
+early_stopping_patience: 50
+monitor_metrics: ["rmse"]
+log_interval: 1

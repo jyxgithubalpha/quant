@@ -1,0 +1,10 @@
+defaults:
+  - model: lasso
+  - train_config: sklearn
+  - trainer: sklearn
+  - evaluator: regression
+  - importance_extractor: sklearn
+  - transform_pipeline: defaults
+  - _self_
+
+name: lasso

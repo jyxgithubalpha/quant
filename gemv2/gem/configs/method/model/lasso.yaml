@@ -1,0 +1,3 @@
+# Lasso model defaults
+_target_: sklearn.linear_model.Lasso
+alpha: 0.01

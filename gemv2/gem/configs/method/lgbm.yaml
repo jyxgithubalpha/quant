@@ -1,0 +1,18 @@
+defaults:
+  - model: lgbm
+  - train_config: gbdt
+  - trainer: lgbm
+  - evaluator: regression
+  - importance_extractor: lgbm
+  - tuner: lgbm
+  - adapter: lgbm
+  - transform_pipeline: with_feature_weight
+  - _self_
+
+name: lgbm
+
+train_config:
+  max_iterations: 10
+  early_stopping_patience: 5
+  monitor_metrics: ["pearsonr_ic"]
+  log_interval: 1

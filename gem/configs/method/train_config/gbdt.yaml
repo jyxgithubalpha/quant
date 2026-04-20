@@ -1,0 +1,7 @@
+_target_: gem2.method.TrainConfig
+params: {}
+num_boost_round: 200
+early_stopping_rounds: 50
+feval_names: ["rmse"]
+objective_name: "regression"
+verbose_eval: 1

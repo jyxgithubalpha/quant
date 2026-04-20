@@ -1,0 +1,6 @@
+_target_: gem.core.training.TrainConfig
+params: {}
+max_iterations: 1
+early_stopping_patience: 1
+monitor_metrics: ["pearsonr_ic"]
+log_interval: 0
